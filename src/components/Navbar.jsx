@@ -25,10 +25,16 @@ export default function Navbar() {
       {/* Logo */}
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 10 }}>
         <img
-          src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
-          alt="AGR Constructions Logo"
-          style={{ height: 60, width: 60, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top' }}
-        />
+            src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782725250/AGR_CONSTRUCTION_gjmxya.png"
+            alt="AGR Constructions Logo"
+            style={{ 
+              height: 60, 
+              width: 60, 
+              borderRadius: '50%', 
+              objectFit: 'cover',
+              objectPosition: '50% 20%'
+            }}
+/>
         <div>
           <div style={{ color: '#c9a84c', fontSize: 18, fontWeight: 'bold', lineHeight: 1.2 }}>
             A G R Constructions
