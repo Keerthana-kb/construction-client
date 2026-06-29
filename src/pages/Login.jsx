@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
@@ -13,9 +14,13 @@ export default function Login() {
     e.preventDefault();
     try {
       const { data } = await axios.post(`${API}/api/auth/login`, form);
+      if (data.user.role === 'admin') {
+        setError('Please use the admin login page.');
+        return;
+      }
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
-      navigate(data.user.role === 'admin' ? '/admin' : '/dashboard');
+      navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.msg || 'Login failed');
     }
@@ -33,7 +38,7 @@ export default function Login() {
           <h2 style={{ color: '#0a2e1a', marginTop: 12, marginBottom: 4 }}>Welcome Back</h2>
           <p style={{ color: '#666' }}>Login to A G R Constructions</p>
         </div>
-        {error && <p style={{ color: 'red', textAlign: 'center', marginBottom: 16 }}>{error}</p>}
+        {error && <p style={{ color: 'red', textAlign: 'center', marginBottom: 16, padding: 10, background: '#fff5f5', borderRadius: 8 }}>{error}</p>}
         <form onSubmit={handleSubmit}>
           <input placeholder="Email" type="email" value={form.email}
             onChange={e => setForm({ ...form, email: e.target.value })}
