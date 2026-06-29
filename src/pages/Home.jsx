@@ -11,9 +11,15 @@ export default function Home() {
         padding: '100px 20px'
       }}>
         <img
-          src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
-          alt="AGR Logo"
-          style={{ height: 60, width: 60, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', marginBottom: 24, border: '3px solid #c9a84c' }}
+          src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782725250/AGR_CONSTRUCTION_gjmxya.png"
+            alt="AGR Constructions Logo"
+            style={{ 
+              height: 60, 
+              width: 60, 
+              borderRadius: '50%', 
+              objectFit: 'cover',
+              objectPosition: '50% 20%'
+            }}
         />
         <h1 style={{ fontSize: 48, marginBottom: 12, color: '#c9a84c' }}>
           A G R Constructions
