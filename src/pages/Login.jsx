@@ -2,6 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 
+const API = 'https://construction-backend-g6xy.onrender.com';
+
 export default function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
@@ -10,7 +12,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(`https://construction-backend-g6xy.onrender.com/api/auth/login`, form);
+      const { data } = await axios.post(`${API}/api/auth/login`, form);
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       navigate(data.user.role === 'admin' ? '/admin' : '/dashboard');
@@ -22,8 +24,15 @@ export default function Login() {
   return (
     <div style={{ minHeight: '100vh', background: '#f9f9f9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ background: '#fff', padding: 40, borderRadius: 12, boxShadow: '0 4px 20px rgba(0,0,0,0.1)', width: 400 }}>
-        <h2 style={{ textAlign: 'center', color: '#1a1a2e', marginBottom: 8 }}>Welcome Back</h2>
-        <p style={{ textAlign: 'center', color: '#666', marginBottom: 24 }}>Login to your account</p>
+        <div style={{ textAlign: 'center', marginBottom: 24 }}>
+          <img
+            src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
+            alt="AGR Logo"
+            style={{ height: 80, width: 80, borderRadius: '50%', objectFit: 'cover' }}
+          />
+          <h2 style={{ color: '#0a2e1a', marginTop: 12, marginBottom: 4 }}>Welcome Back</h2>
+          <p style={{ color: '#666' }}>Login to A G R Constructions</p>
+        </div>
         {error && <p style={{ color: 'red', textAlign: 'center', marginBottom: 16 }}>{error}</p>}
         <form onSubmit={handleSubmit}>
           <input placeholder="Email" type="email" value={form.email}
@@ -35,7 +44,7 @@ export default function Login() {
           <button type="submit" style={btnStyle}>Login</button>
         </form>
         <p style={{ textAlign: 'center', marginTop: 16, color: '#666' }}>
-          Don't have an account? <Link to="/register" style={{ color: '#f59e0b' }}>Register</Link>
+          Don't have an account? <Link to="/register" style={{ color: '#c9a84c', fontWeight: 'bold' }}>Register</Link>
         </p>
       </div>
     </div>
@@ -48,7 +57,7 @@ const inputStyle = {
   fontSize: 15, boxSizing: 'border-box'
 };
 const btnStyle = {
-  width: '100%', background: '#f59e0b', color: '#fff',
+  width: '100%', background: '#0a2e1a', color: '#c9a84c',
   padding: '12px', border: 'none', borderRadius: 8,
   fontSize: 16, fontWeight: 'bold', cursor: 'pointer'
 };
