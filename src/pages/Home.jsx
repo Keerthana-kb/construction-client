@@ -13,7 +13,7 @@ export default function Home() {
         <img
           src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
           alt="AGR Logo"
-          style={{ height: 120, width: 120, borderRadius: '50%', objectFit: 'cover', marginBottom: 24, border: '3px solid #c9a84c' }}
+          style={{ height: 120, width: 120, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', marginBottom: 24, border: '3px solid #c9a84c' }}
         />
         <h1 style={{ fontSize: 48, marginBottom: 12, color: '#c9a84c' }}>
           A G R Constructions
@@ -169,7 +169,7 @@ export default function Home() {
         <img
           src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
           alt="AGR Logo"
-          style={{ height: 70, width: 70, borderRadius: '50%', objectFit: 'cover', marginBottom: 16 }}
+          style={{ height: 70, width: 70, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', marginBottom: 16 }}
         />
         <h3 style={{ color: '#c9a84c', marginBottom: 8 }}>A G R Constructions</h3>
         <p style={{ color: '#aaa', marginBottom: 4 }}>Vishweshwaraiah Rd, Banashankari, Bengaluru - 560085</p>

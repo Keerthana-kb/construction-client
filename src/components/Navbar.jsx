@@ -27,7 +27,7 @@ export default function Navbar() {
         <img
           src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
           alt="AGR Constructions Logo"
-          style={{ height: 60, width: 60, borderRadius: '50%', objectFit: 'cover' }}
+          style={{ height: 60, width: 60, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top' }}
         />
         <div>
           <div style={{ color: '#c9a84c', fontSize: 18, fontWeight: 'bold', lineHeight: 1.2 }}>

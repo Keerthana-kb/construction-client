@@ -46,7 +46,7 @@ export default function AdminLogin() {
           <img
             src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
             alt="AGR Logo"
-            style={{ height: 90, width: 90, borderRadius: '50%', objectFit: 'cover', border: '3px solid #c9a84c' }}
+            style={{ height: 90, width: 90, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', border: '3px solid #c9a84c' }}
           />
           <h2 style={{ color: '#c9a84c', marginTop: 16, marginBottom: 4 }}>Admin Access</h2>
           <p style={{ color: '#aaa', fontSize: 14 }}>A G R Constructions — Restricted Area</p>

@@ -54,7 +54,7 @@ export default function AdminDashboard() {
           <img
             src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
             alt="AGR Logo"
-            style={{ height: 60, width: 60, borderRadius: '50%', objectFit: 'cover' }}
+            style={{ height: 60, width: 60, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top' }}
           />
           <div>
             <h1 style={{ color: '#c9a84c', margin: 0 }}>Admin Dashboard</h1>

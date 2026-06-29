@@ -33,7 +33,7 @@ export default function BookService() {
           <img
             src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
             alt="AGR Logo"
-            style={{ height: 70, width: 70, borderRadius: '50%', objectFit: 'cover' }}
+            style={{ height: 70, width: 70, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top' }}
           />
           <h2 style={{ color: '#0a2e1a', marginTop: 12, marginBottom: 4 }}>Book a Service</h2>
           <p style={{ color: '#666' }}>A G R Constructions</p>

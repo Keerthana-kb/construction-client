@@ -33,7 +33,7 @@ export default function Login() {
           <img
             src="https://res.cloudinary.com/dwulv7yhi/image/upload/v1782720497/AGR_CONSTRUCTIONS_zfxxzl.jpg"
             alt="AGR Logo"
-            style={{ height: 80, width: 80, borderRadius: '50%', objectFit: 'cover' }}
+            style={{ height: 80, width: 80, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top' }}
           />
           <h2 style={{ color: '#0a2e1a', marginTop: 12, marginBottom: 4 }}>Welcome Back</h2>
           <p style={{ color: '#666' }}>Login to A G R Constructions</p>
